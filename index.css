@@ -1,0 +1,19 @@
+py-terminal {
+	display: none !important;
+}
+.py-repl-run-button {
+	opacity: 1 !important;
+}
+body {
+	width: 50vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+.py-repl-output {
+	background-color: #e2e2e2;
+	margin-top: 0.8rem;
+}
+section {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}

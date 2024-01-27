@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<title>Условные алгоритмы</title>
+
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://pyscript.net/latest/pyscript.css"
+		/>
+
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<a href="/index.html">Домой</a>
+		<h1>Условные алгоритмы</h1>
+		<!-- <nav class="navbar" style="background-color: #000000">
+			<div class="app-header">
+				<a href="/">
+					<img src="./logo.png" class="logo" />
+				</a>
+				<a class="title" href="" style="color: #f0ab3c"
+					>PyScript REPL</a
+				>
+			</div>
+		</nav> -->
+		<section class="pyscript">
+			Условный оператор if. В Python, условный оператор if позволяет выполнять блок кода только при выполнении определенного условия. По умолчанию python проверяет переменную на то, является ли оно True (правдой).
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl1">
+					разрешено = True # Правда
+					if разрешено:
+						print("Доступ разрешен.")
+					else:
+						print("Доступ запрещен.")					
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			Операторы сравнения.
+В условных операторах используются операторы сравнения, такие как == (равно), != (не равно), < (меньше), > (больше), <= (меньше или равно), >= (больше или равно).
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl2">
+					число = 7
+if число > 2:
+    print("Число больше двух.")
+else:
+    print("Число меньше.")
+
+
+
+					
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			Конструкция if-elif-else.
+Позволяет обработать несколько условий последовательно.
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl3">
+					оценка = 85
+if оценка >= 90:
+    print("Отлично!")
+elif оценка >= 70:
+    print("Хорошо.")
+else:
+    print("Пора заняться учебой.")
+
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<section class="pyscript">
+			Логические операторы.
+Логические операторы and (И), or (ИЛИ), not (НЕ)  позволяют комбинировать условия.
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl4">
+					возраст = 25
+студент = True
+
+
+if возраст >= 18 and студент:
+    print("Вы можете получить студенческую скидку.")
+elif not студент:
+    print("Вы не студент!")
+else:
+    print("Студенческая скидка недоступна.")
+
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<h2>Задачи</h2>
+		<section class="pyscript">
+			Простая задача по условному оператору:
+Если переменная температура равна 25 градусам, выведи на экран сообщение: "Погода отличная!". В противном случае выведи: "Погода обычная."
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl1">
+					температура = 25
+				</py-repl>
+			</div>
+			<div id="isMatch1"></div>
+		</section>
+		<section class="pyscript">
+			Задача по операторам сравнения:
+Проверь, является ли число 12 четным. Если да, выведи "Число четное", иначе "Число нечетное".
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl2"></py-repl>
+			</div>
+			<div id="isMatch2"></div>
+		</section>
+		<section class="pyscript">
+			Задача с конструкцией if-elif-else:
+Дана переменная баллы со значением 78. Выведи на экран "Отлично!", если баллы больше или равны 90, "Хорошо." при баллах от 70 до 89, и "Пора заняться учебой." в остальных случаях.
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl3">
+
+				</py-repl>
+			</div>
+			<div id="isMatch3"></div>
+		</section>
+		<section class="pyscript">
+			Задача с логическими операторами:
+Если переменная возраст больше 21 И переменная упражнения равна True, то выведи "Вы можете присоединиться к спортивному клубу.". В противном случае выведи "Присоединение к клубу недоступно."
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl4">
+					упражнения = False
+					возраст = 20
+				</py-repl>
+			</div>
+			<div id="isMatch4"></div>
+		</section>
+		<section class="pyscript">
+			Дополнительная задача по условному оператору:
+Если переменная день_недели равна "пятница", выведи "Сегодня пятница! Ура!". В противном случае выведи "Сегодня не пятница."
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl5">
+					день_недели = "суббота"
+				</py-repl>
+			</div>
+			<div id="isMatch5"></div>
+		</section>
+		<section class="pyscript">
+			Дополнительная задача по операторам сравнения:
+Проверь, равны ли переменные число1 и число2. Если да, выведи "Числа равны", иначе "Числа не равны".
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl6">
+					число1 = 10
+					число2 = 1
+				</py-repl>
+			</div>
+			<div id="isMatch6"></div>
+		</section>
+				<script src="https://pyscript.net/latest/pyscript.js"></script>
+		<script src="condition.js"></script>
+	</body>
+</html>

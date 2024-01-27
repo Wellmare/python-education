@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<title>Циклические алгоритмы</title>
+
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://pyscript.net/latest/pyscript.css"
+		/>
+
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<a href="/index.html">Домой</a>
+		<h1>Циклические алгоритмы</h1>
+		<!-- <nav class="navbar" style="background-color: #000000">
+			<div class="app-header">
+				<a href="/">
+					<img src="./logo.png" class="logo" />
+				</a>
+				<a class="title" href="" style="color: #f0ab3c"
+					>PyScript REPL</a
+				>
+			</div>
+		</nav> -->
+		<section class="pyscript">
+			Цикл while.
+Цикл while выполняет блок кода, пока выполняется определенное условие. Этот код выводит "Шаг" от 0 до 4, увеличивая счетчик на каждой итерации.
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl1">
+счетчик = 0
+
+while счетчик < 5:
+	print("Шаг", счетчик)
+	счетчик += 1
+				
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			Цикл for и массивы.
+			Цикл for используется для перебора элементов в последовательности, такой как массив (или список). Этот код выводит числа от 1 до 5, перебирая элементы массива.
+
+			
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl2">
+					числа = [1, 2, 3, 4, 5]
+
+					for число in числа:
+						print(число)					
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			Функция range().
+			Функция range() удобна для генерации последовательностей чисел в циклах for. Функция range() создает массив для перебора в промежутке от первого числа, до второго (не включая его). Этот код также выводит числа от 1 до 5.
+
+			
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl3">
+					for i in range(1, 6):
+						print(i)
+
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<section class="pyscript">
+			Операторы break и continue.
+			Break прерывает выполнение цикла, если выполняется определенное условие.
+			continue переходит к следующей итерации, игнорируя оставшуюся часть цикла. В этом примере цикл прерывается при i == 5 и пропускает число 2.
+			
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl4">
+				for i in range(1, 10):
+					if i == 5:
+						break
+					if i == 2:
+						continue
+					print(i)
+				
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<h2>Задачи</h2>
+		<section class="pyscript">
+			Задача по циклу while:
+Используя цикл while, выведи на экран числа от 1 до 4.
+
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl1">
+					
+				</py-repl>
+			</div>
+			<div id="isMatch1"></div>
+		</section>
+		<section class="pyscript">
+			Задача по циклу for и массиву:
+Используя цикл for, выведи на экран каждый элемент массива цвета = ["красный", "синий", "зеленый"].
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl2">
+					массив = ["красный", "синий", "зеленый"]
+				</py-repl>
+			</div>
+			<div id="isMatch2"></div>
+		</section>
+		<section class="pyscript">
+			Задача с функцией range():
+			Используя цикл for и функцию range(), выведи на экран числа от 2 до 6 (включительно).
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl3">
+
+				</py-repl>
+			</div>
+			<div id="isMatch3"></div>
+		</section>
+		<section class="pyscript">
+			Задача с операторами break и continue:
+Используя цикл for и операторы break и continue, выведи на экран числа от 1 до 7, прерывая цикл при числе 5 (не выводить 5) и пропуская числа 3 и 2.
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl4">
+
+				</py-repl>
+			</div>
+			<div id="isMatch4"></div>
+		</section>
+		<section class="pyscript">
+			Дополнительная задача по циклу while:
+Используя цикл while, выведи на экран квадраты чисел от 1 до 3.
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl5">
+
+				</py-repl>
+			</div>
+			<div id="isMatch5"></div>
+		</section>
+		<section class="pyscript">
+			Дополнительная задача по циклу for и массиву:
+			Используя цикл for, выведи на экран каждую букву из массива.
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl6">
+					массив = ["П", "р", "и", "в", "е", "т"]
+				</py-repl>
+			</div>
+			<div id="isMatch6"></div>
+		</section>
+				<script src="https://pyscript.net/latest/pyscript.js"></script>
+		<script src="cyclic.js"></script>
+	</body>
+</html>

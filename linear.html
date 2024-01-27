@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<title>Линейные алгоритмы</title>
+
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://pyscript.net/latest/pyscript.css"
+		/>
+
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<a href="/index.html">Домой</a>
+		<h1>Линейные алгоритмы</h1>
+		<!-- <nav class="navbar" style="background-color: #000000">
+			<div class="app-header">
+				<a href="/">
+					<img src="./logo.png" class="logo" />
+				</a>
+				<a class="title" href="" style="color: #f0ab3c"
+					>PyScript REPL</a
+				>
+			</div>
+		</nav> -->
+		<section class="pyscript">
+			Типы данных:
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl1">
+# Целое число (int)
+целое_число = 42
+
+
+# Число с плавающей точкой, дробное (float)
+число_с_плавающей_точкой = 3.14
+
+
+# Строка (string)
+строка = 'Привет, мир!'
+
+
+# Логическое значение (bool)
+логическое_значение = True # Правда
+логическое_значение = False # Ложь
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			print() - Вывод на экран:
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl2">
+					print("Привет, мир!")
+					print("Привет, ", "мир!")
+					
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+		<section class="pyscript">
+			Арифметические операции:
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl3">
+					a = 5
+					b = 3
+					
+					
+					сумма = a + b
+					разность = a - b
+					произведение = a * b
+					частное = a / b
+					
+					
+					print("Сумма:", сумма)
+					print("Разность:", разность)
+					print("Произведение:", произведение)
+					print("Частное:", частное)
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<section class="pyscript">
+			Переменные:
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl4">
+					имя = "Иван"
+					возраст = 15
+					
+					
+					print("Меня зовут", имя, "и мне", возраст, "лет.")
+					
+				</py-repl>
+			</div>
+			<br />
+		</section>
+		<section class="pyscript">
+			Пример вычисления среднего арифметического:
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="repl5" >
+					# Ввод чисел от пользователя
+					число1 = 10
+					число2 = 6.8
+					
+					
+					# Вычисление среднего арифметического
+					среднее = (число1 + число2) / 2
+					
+					
+					# Вывод результата
+					print("Среднее арифметическое:", среднее)
+				</py-repl>
+			</div>
+			<br />
+		</section>
+
+
+		<h2>Задачи</h2>
+		<section class="pyscript">
+			Задача по print(): Выведи на экран фразу: "Python - мой любимый язык
+			программирования!"
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl1">
+				</py-repl>
+			</div>
+			<div id="isMatch1"></div>
+		</section>
+		<section class="pyscript">
+			Задача по арифметике: Вычисли произведение чисел 7 и 4.
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl2"></py-repl>
+			</div>
+			<div id="isMatch2"></div>
+		</section>
+		<section class="pyscript">
+			Задача по переменным: Создай переменную город и присвой ей значение
+			"Москва". Выведи на экран фразу: "Я живу в городе: Москва."
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl3">
+
+				</py-repl>
+			</div>
+			<div id="isMatch3"></div>
+		</section>
+		<section class="pyscript">
+			Задача линейного алгоритма: Посчитай сумму чисел 12 и 18, затем подели
+			результат на 2.
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl4">
+
+				</py-repl>
+			</div>
+			<div id="isMatch4"></div>
+		</section>
+		<section class="pyscript">
+			Дополнительная задача по переменным: Создай переменную число и присвой ей
+			значение 9. Выведи на экран фразу: "Ваше число умноженное на 5 равно
+			[результат умножения]".
+		
+			<br />
+			<div style="margin-right: 3rem">
+				<py-repl id="taskrepl5">
+
+				</py-repl>
+			</div>
+			<div id="isMatch5"></div>
+		</section>
+				<script src="https://pyscript.net/latest/pyscript.js"></script>
+		<script src="linear.js"></script>
+	</body>
+</html>
