@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Изучение python</title>
 
-		<link rel="icon" type="image/png" href="icon.svg" />
-		<link
-			rel="stylesheet"
-			href="https://pyscript.net/latest/pyscript.css"
-		/>
+    <!-- Webpage Title -->
+    <title>Изучение Python</title>
 
-		<link rel="stylesheet" href="./index.css" />
-	</head>
-	<body>
-		<!-- <nav class="navbar" style="background-color: #000000">
-			<div class="app-header">
-				<a href="/">
-					<img src="./logo.png" class="logo" />
-				</a>
-				<a class="title" href="" style="color: #f0ab3c"
-					>PyScript REPL</a
-				>
-			</div>
-		</nav> -->
-		<h4>Алгоритмы:</h4>
-		<ul>
-			<li><a href="linear.html">Линейные</a></li>
-			<li><a href="condition.html">Условные</a></li>
-			<li><a href="cyclic.html">Циклические</a></li>
-		</ul>
-		
-		<!-- <section class="pyscript">
-			<h1><b>PyScript REPL</b></h1>
-			Tip: press Shift-ENTER to evaluate a cell Выведите 5
-			<br />
-			<div style="margin-right: 3rem">
-				<py-repl id="my-repl"></py-repl>
-			</div>
-			<br />
-			<div id="isMatch" style="color: green"></div>
-		</section> -->
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
-		<!-- <script src="https://pyscript.net/latest/pyscript.js"></script>
-		<script src="index.js"></script> -->
-	</body>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.svg" />
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text" href="index.html">Python</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="linear.html">Линейные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="condition.html">Условные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cyclic.html">Циклические</a>
+                    </li>
+                </ul>
+
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right"> 
+            <h1 class="headline">Добро пожаловать в мир <span class="home_text">python</span><br></h1>
+            <p class="para para-light py-3">Давайте вместе погрузимся в увлекательный мир программирования с помощью Python. Наш ресурс предоставляет всё необходимое для освоения этого языка: обучающие материалы, интерактивные задания и множество примеров кода. Начнем вместе этот захватывающий путь к владению Python!</p>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-laptop-house fa-lg"></i></p>
+                <p>Можно работать где угодно</p>  
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
+                <p>Нужен только интернет</p>  
+            </div>
+            <div class="my-3">
+                <a class="btn" href="linear.html">Линейные алгоритмы</a>
+                <a class="btn mx-3" href="condition.html">Разветвляющиеся алгоритмы</a>
+                <a class="btn" href="cyclic.html">Циклические алгоритмы</a>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of home -->
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+</body>
 </html>
