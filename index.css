@@ -9,6 +9,12 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+@media only screen and (max-width: 600px) {
+	/* Применять стили только на устройствах с шириной экрана до 600px (например, телефонах) */
+	body {
+		width: 100%;
+	}
+}
 .py-repl-output {
 	background-color: #e2e2e2;
 	margin-top: 0.8rem;
